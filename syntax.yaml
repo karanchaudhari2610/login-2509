@@ -1,0 +1,23 @@
+# -means comment , this line will be ignored by kubernetes
+
+# -we can use .yaml or .yml as extension for files
+# key values
+key: values
+name: karan
+city: hyderabad
+
+# collection of data as a set of key-value paris
+# dictionary
+trainer:
+  name: karan
+  city: hyderabad
+  state: telangana
+  country: india
+
+# Represent multiple items using lists
+# list
+courses:
+- aws
+- azure
+- devops
+- python
