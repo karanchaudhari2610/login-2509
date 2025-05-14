@@ -32,18 +32,18 @@ spec:
 
 ---
 
-# Service Template with NodePort.
+# Service Template with NodePort
 apiVersion: v1
 kind: Service
 metadata:
-  name: login-svc
-  Namespace: dev
+  name: nginx-svc
 spec:
   type: NodePort
   selector:
-    app: login
+    app: nginx
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30008
+      nodePort: 30007
+
 
