@@ -9,13 +9,13 @@ kind: Deployment
 metadata:
   # Unique key of the Deployment instance
   name: nginx-deployment
+  Namespace: dev
 spec:
   # 3 Pods should exist at all times.
   replicas: 1
   selector:
     matchLabels:
       app: nginx
-      Namespace: dev
   template:
     metadata:
       labels:
